@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE SAW</title>
+    <script src="https://kit.fontawesome.com/6caee35678.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estiloTiket.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+        }
+
+        #direccion {
+            text-align: center;
+        }
+
+        .head {
+            background-color: #1883ba;
+            border-bottom: 4px solid #000;
+            text-align: left;
+        }
+
+        tr {
+            background-color: #fff;
+            color: #abc4ff;
+        }
+
+            tr:nth-child(even) {
+                background-color: #abc4ff;
+                color: #fff;
+            }
+
+            tr:hover td {
+                background-color: #abc4ff;
+                color: #fff;
+            }
+        #iconos {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="item" id="buscador">
+                <i class="fas fa-map-marker-alt arriba"></i> <i class="fas fa-search arriba"></i>
+                <div id="barra-buscar"> <label for="">&nbsp;Buscar</label></div>
+            </div>
+            <div class="item titulo">
+                <h1 class="title">SEE<span class="saw">SAW</span></h1>
+            </div>
+
+            <div class="item" id="iconos">
+                <i class="fas fa-user izquierda"></i> <i class="fas fa-heart izquierda"></i>
+                <i class="fas fa-shopping-cart izquierda carro">&nbsp;<label for="" id="valor">0</label></i>
+            </div><br>
+        </div>
+
+        <div id="sec">
+            <div class="sec" id="novedades"><label for="" class="apartado">Confirmación de pedido</label></div>
+        </div>
+        <div id="barra-inferior"></div>
+    </header>
+
+    <div class="caja-padre">
+        <div id="direccion">
+            <h3>Nombre</h3>
+            <label for="" id="nombre"></label>
+            <h3>Domicilio</h3>
+            <label for="" id="domicilio"></label>
+        </div>
+        <div id="tabla">
+            <table id="tablaPrendas">
+                <thead>
+                    <tr class="head">
+                        <th>Prenda</td>
+                        <th>Precio</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="btn"><button id="confirmar">Confirmar compra</button></div>
+    </div>
+    <script src="JS/agregar.js"></script>
+</body>
+
+</html>

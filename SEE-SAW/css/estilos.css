@@ -1,0 +1,215 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/fondo.jpeg);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.saw {
+    color: #168aad;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+    .container .card {
+        width: 260px;
+        height: 410px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        margin: 20px 20px 20px 20px;
+        text-align: center;
+        transition: all 0.25s;
+        position: relative;
+    }
+
+        .container .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+            background-color: #abc4ff;
+        }
+
+        .container .card img {
+            width: 100%;
+            height: 230px;
+        }
+
+        .container .card h4 {
+            font-weight: 600;
+        }
+
+        .container .card p {
+            padding: 0 1rem;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .container .card a {
+            font-weight: 500;
+            text-decoration: none;
+            color: #3498db;
+        }
+
+/*Cambios*/
+
+
+#contenedor-P {
+    width: 90%;
+    height: 60rem;
+    background: #d7e3fc;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.item {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.titulo {
+    position: relative;
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.fa-star {
+    color: rgb(255, 215, 40);
+}
+
+.container .card h4 {
+    font-weight: 600;
+    margin: 5px;
+}
+/*Barra superior*/
+header {
+    width: 100%;
+    height: 100px;
+    background: #abc4ff;
+    margin-bottom: 30px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; /*Para que las cosas se separen a los lados*/
+    align-items: center; /*Para alinearlos de manera vertical*/
+}
+/*Lado izquierdo*/
+#buscador {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+/*Lado derecho*/
+#iconos {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*Icons*/
+.arriba {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.izquierda {
+    font-size: 25px;
+    margin-right: 30px;
+}
+/*Secciones*/
+.sec {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.apartado {
+    display: flex;
+    margin-top: 3px;
+}
+
+.fa-search {
+    margin-left: 40px;
+}
+
+#barra-buscar {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
+#novedades {
+    background-color: #d7e3fc;
+    border-radius: 4px;
+}
+
+#barra-inferior {
+    width: 100%;
+    height: 5px;
+    background: #d7e3fc;
+}
+
+.fa-map-marker-alt, .fa-search,
+.fa-user, .fa-heart, .fa-shopping-cart {
+    color: #fff;
+}
+/*Boton de agregar*/
+#agregar {
+    text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+}
+
+    #agregar:hover {
+        color: #1883ba;
+        background-color: #ffffff;
+    }
+
+.carro {
+    cursor: pointer;
+}
